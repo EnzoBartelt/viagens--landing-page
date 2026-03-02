@@ -5,27 +5,26 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <title>Página de Turismo - Projeto DEVstart</title>
         <link rel='stylesheet' href='style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="logo.png" alt="TURstart Logo">
+                <img src="logo.svg" alt="TURstart Logo">
             </div>
             <nav id="menu">
-                <div class="container">
                 <ul id="nav-links">
                     <li><a href='#TripMe'>Why Colmar?</a></li>
                     <li><a href='#MeetUs'>Meet Us</a></li>
                     <li><a href='#Advice'>Advices</a></li>
                 </ul>
-                </div>
             </nav>
         </header>
         <main>
             <div class="banner">
                 <h1>Where every street tells a story</h1>
                 <h2>Discover Colmar, the hidden gem of France</h2>
-                <button>Explore</button>
+                <a href="#TripMe"><button>Explore</button></a>
             </div>
             <section id='TripMe'>
                 <div class="container">
@@ -37,79 +36,88 @@
                         streets feels like traveling back in time.
                     </p>
                     <ul id="highlights">
-                        <li><strong>Location</strong>: Alsace, France — 30 minutes from Strasbourg</li>
-                        <li><strong>Best time to visit</strong>: May through October, or December (world-famous Christmas market)</li>
-                        <li><strong>How to get there</strong>: Fly to Strasbourg or Basel (Switzerland) + regional train</li>
+                        <li>Location: Alsace, France — 30 minutes from Strasbourg</li>
+                        <li>Best time to visit: May through October, or December (world-famous Christmas market)</li>
+                        <li>How to get there: Fly to Strasbourg or Basel (Switzerland) + regional train</li>
                     </ul>
                 </div>
             </section>
             <section id='MeetUs'>
-                <div class="container">
+                <div class="list-container">
+                    <ul>
+                        <li>
+                            <img src="female-image-placeholder.jpg" alt=" ">
+                            <div class="presentation">
+                                <h3 class="team">Sophie Martin - <strong>Local Guide</strong></h3>
+                                <p class="quote">"Colmar chose me before I ever chose it."</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="male-image-placeholder.jpg" alt=" ">
+                            <div class="presentation">
+                                <h3 class="team">Lucas Ferreira - <strong>Photographer</strong></h3>
+                                <p class="quote">"Every alley here is a different painting."</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="female-image-placeholder.jpg" alt=" ">
+                            <div class="presentation">
+                                <h3 class="team">Isabelle Müller - <strong>Itinerary Curator</strong></h3>
+                                <p class="quote">"The secret lies in the details no guidebook mentions."</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-container">
                     <h2>Who we are</h2>
                     <p>We are a group of passionate travelers who stumbled upon Colmar by chance — and never 
                         forgot it. TripMe was born out of a desire to share this special place with the 
                         world. Our mission is to help you live authentic experiences, far from mass tourism, 
                         with itineraries designed for those who truly want to connect with local culture.
                     </p>
-                    <ul>
-                        <li>
-                            <img src="picture1.jpg" alt=" ">
-                            <h3 class="team">Sophie Martin - <strong>Local Guide</strong></h3>
-                            <p class="quote">"Colmar chose me before I ever chose it."</p>
-                        </li>
-                        <li>
-                            <img src="picture2.jpg" alt=" ">
-                            <h3 class="team">Lucas Ferreira - <strong>Photographer</strong></h3>
-                            <p class="quote">"Every alley here is a different painting."</p>
-                        </li>
-                        <li>
-                            <img src="picture3.jpg" alt=" ">
-                            <h3 class="team">Isabelle Müller - <strong>Itinerary Curator</strong></h3>
-                            <p class="quote">"The secret lies in the details no guidebook mentions."</p>
-                        </li>
-                    </ul>
                 </div>
+                
             </section>
             <section id='Advice'>
-                <div class="container">
                     <h2>Tips From Those Who've Been There</h2>
                     <p>Before you pack your bags, check out the advice from people who have walked every 
                         cobblestone in Colmar.
                     </p>
-                    <h3>Tips</h3>
-                    <ul>
-                    <li>
-                        <h4>Arrive early</h4>
-                        <p>The historic center gets crowded after 10 AM. Wake up at sunrise to photograph the canals without the crowds.</p>
-                    </li>
-                    <li>
-                        <h4>Try the local Riesling</h4>
-                        <p>Alsace is one of France's most famous wine regions. A glass at the end of the day is non-negotiable.</p>
-                    </li>
-                    <li>
-                        <h4>Wear comfortable shoes</h4>
-                        <p>The streets are cobblestone. Beautiful, but unforgiving with heels.</p>
-                    </li>
-                    <li>
-                        <h4>Learn two words in Alsatian</h4>
-                        <p>"Güete Morge" (good morning) opens many doors and earns plenty of smiles.</p>
-                    </li>
-                    <li>
-                        <h4>Avoid restaurants on the main square</h4>
-                        <p>The best meals are found on the side streets, where the locals actually eat.</p>
-                    </li>
+                    <h3>Tips:</h3>
+                    <ul id="cards">
+                        <li class="card">
+                            <h4>Arrive early</h4>
+                            <p>The historic center gets crowded after 10 AM. Wake up at sunrise to photograph the canals without the crowds.</p>
+                        </li>
+                        <li class="card">
+                            <h4>Try the local Riesling</h4>
+                            <p>Alsace is one of France's most famous wine regions. A glass at the end of the day is non-negotiable.</p>
+                        </li>
+                        <li class="card">
+                            <h4>Wear comfortable shoes</h4>
+                            <p>The streets are cobblestone. Beautiful, but unforgiving with heels.</p>
+                        </li>
+                        <li class="card">
+                            <h4>Learn two words in Alsatian</h4>
+                            <p>"Güete Morge" (good morning) opens many doors and earns plenty of smiles.</p>
+                        </li>
+                        <li class="card">
+                            <h4>Avoid restaurants on the main square</h4>
+                            <p>The best meals are found on the side streets, where the locals actually eat.</p>
+                        </li>
                     </ul>
-                </div>
             </section>
         </main>
         <footer>
-            <div class="container">
-                <p id="disclaimer"><small>This page is a demonstrative project created as part of a web development course. All written content was generated with the assistance of AI and is intended for educational and illustrative purposes only. The information presented here should not be taken as accurate, up-to-date, or factual. We recommend consulting reliable sources before making any travel decisions.</small></p>
+            <div class="list-container">
                 <ul id="footer-links">
                     <li><a href='#TripMe'>Why Colmar?</a></li>
                     <li><a href='#MeetUs'>Meet Us</a></li>
                     <li><a href='#Advice'>Advices</a></li>
                 </ul>
+            </div>
+            <div class="text-container">
+                <p id="disclaimer"><small>This page is a demonstrative project created as part of a web development course. All written content was generated with the assistance of AI and is intended for educational and illustrative purposes only. The information presented here should not be taken as accurate, up-to-date, or factual. We recommend consulting reliable sources before making any travel decisions.</small></p>
             </div>
         </footer>
     </body>
